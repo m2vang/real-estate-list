@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Real Estate Listings</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <!-- sourcing in angular, angular routes and client.js -->
     <script src="vendors/angular.min.js"></script>
     <script src="vendors/angular-route.min.js"></script>
     <script src="scripts/client.js"></script>
+    <!-- sourcing in controllers for each view and styling-->
+    <script src="scripts/controllers/home.controller.js"></script>
+    <script src="scripts/controllers/sale.controller.js"></script>
+    <script src="scripts/controllers/rent.controller.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body ng-app="myApp">
     <div>
         <h1>
             Real Estate
