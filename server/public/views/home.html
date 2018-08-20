@@ -7,16 +7,20 @@
     <br>
     <input type="text" placeholder="City" ng-model="hc.city">
     <br>
-    <input type="text" placeholder="Sale or Rental?" ng-model="hc.type">
+    <select ng-model="hc.type">
+        <option>sale</option>
+        <option>rental</option>
+    </select>
     <br>
-    <input type="text" placeholder="Image_path" ng-model="hc.image_path">
+    <select ng-model="hc.image_path">
+        <option value="classic-flats.jpg">Classic-flats</option>
+        <option value="haunted.png">Haunted</option>
+        <option value="older.jpg">Older</option>
+        <option value="shiny.jpg">Shiny</option>
+        <option value="stony.jpg">Stony</option>
+        <option value="rental.jpg">Rental</option>
+        <option value="rental2.jpg">Rental2</option>
+    </select>
     <br>
     <input type="submit" value="Add new Listing">
 </form>
-
-<!-- <h3 ng-repeat="home in hc.listings">
-    <p>{{home.cost}}</p>
-    <p>{{home.sqft}}</p>
-    <p>{{home.city}}</p>
-    <p>{{home.type}}</p>
-</h3> -->

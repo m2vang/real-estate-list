@@ -33,5 +33,4 @@ myApp.controller('RentController', function ($http) {
             console.log('error in removeRent', error);
         });
     }; //end of removeRent
-
 }); //end of controller

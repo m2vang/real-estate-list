@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: lightgray;
+    text-align: center;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.card {
+    float: left;
+}
