@@ -27,7 +27,8 @@ High level list of items completed: <br>
 - [x] Deletion warning alerts user when delete has been clicked <br>
 
 ### Next Steps: <br>
-- [ ] Allowing users to upload their own image instead of selecting from the avaliable options<br>
+- [ ] Stop the home page from loading when a sale or rental property has been deleted <br>
+- [ ] Allowing users to upload their own image instead of selecting from the avaliable options <br>
 
 ## Authors: <br>
 Mai Chee Vang <br>
