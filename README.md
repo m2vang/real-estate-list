@@ -24,6 +24,7 @@ High level list of items completed: <br>
 - [x] Create a dropdown/select so that the user doesn't need to type sale or rent for every new listing <br>
 - [x] Create a dropdown/select so that the user doesn't need to type the image url for every new listing <br>
 - [x] Display the least expensive property featured prominently at the top of the page <br>
+- [x] Deletion warning alerts user when delete has been clicked <br>
 
 ### Next Steps: <br>
 - [ ] Allowing users to upload their own image instead of selecting from the avaliable options<br>
