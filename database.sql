@@ -1,8 +1,8 @@
 -- Creating listings table in sql
 CREATE TABLE "listings" (
-	"id" serial primary key,
-	"cost" integer,
-	"sqft" integer,
-	"type" varchar(120) not null,
-	"city" varchar(120) not null,
-	"image_path" varchar(120) not null );
+	"id" SERIAL PRIMARY KEY,
+	"cost" INTEGER NOT NULL,
+	"sqft" INTEGER,
+	"type" VARCHAR(120) NOT NULL,
+	"city" VARCHAR(120) NOT NULL DEFAULT 'Twin Cities',
+	"image_path" varchar(120) NOT NULL );
