@@ -3,14 +3,28 @@
 }
 
 html, body {
-    background-color: lightgray;
+    background-size: cover;
+    background-image: url(../images/agriculture-bright-clouds-440731.jpg);
     text-align: center;
+}
+
+.header {
+    background-color: white;
+    margin: 30px;
+    padding: 10px;
 }
 
 h1 {
     text-decoration: underline;
 }
 
+.container {
+    text-align: center;
+}
+
 .card {
+    height: 400px;
     float: left;
+    padding: 10px;
+    margin: 20px;
 }

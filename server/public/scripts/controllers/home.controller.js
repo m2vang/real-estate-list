@@ -22,5 +22,11 @@ myApp.controller('HomeController', function ($http) {
             alert('Unable to add listing!');
             console.log('Error in addHome', error);
         });
+
+        hc.cost = '';
+        hc.sqft = '';
+        hc.type = '';
+        hc.city = '';
+        hc.image_path = '';
     }; //end of addHome
 }); //end of controller
