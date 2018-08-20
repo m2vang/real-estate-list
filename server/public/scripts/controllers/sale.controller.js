@@ -16,5 +16,20 @@ myApp.controller('SaleController', function ($http) {
         }).catch(function(error) {
             console.log('error in GET-sc', error);     
         });
-    }; //end of getSaleListings  
+    }; //end of getSaleListings 
+    
+    sc.removeSale = function (saleId) {
+        console.log('in removeRent', saleId);
+        $http({
+            method: 'DELETE',
+            url: '/delete/' + saleId
+        }).then(function (response) {
+            alert('Listing successfully deleted!')
+            console.log('sale deleted', response);
+            getSaleListings();
+        }).catch(function (error) {
+            alert('Unable to delete!')
+            console.log('error in removeSale', error);
+        });
+    }; //end of removeSale
 }); //end of controller

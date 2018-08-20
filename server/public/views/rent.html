@@ -1,13 +1,13 @@
 <h1>
 Homes for Rent:
 </h1>
-<div class="card" ng-repeat="rent in rc.rent">
-    <img class="card-img-top" ng-src="images/{{rent.image_path}}" alt="Card image cap" width="200px">
+<div class="card" ng-repeat="rent in rc.rent" >
+    <img class="card-img-top" ng-src="images/{{rent.image_path}}" alt="Card image cap">
     <div class="card-body">
         <h5 class="card-cost">$ {{rent.cost}}</h5>
         <p class="card-sqft">{{rent.sqft}}</p>
         <p class="card-city">{{rent.city}}</p>
         <p class="card-type">{{rent.type}}</p>
-        <a href="#" class="btn btn-danger">Delete</a>
+        <a href="#" class="btn btn-danger" ng-click="rc.removeRent(rent.id)">Delete</a>
     </div>
 </div>
