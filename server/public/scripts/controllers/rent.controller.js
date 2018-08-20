@@ -21,16 +21,21 @@ myApp.controller('RentController', function ($http) {
 
     rc.removeRent = function (rentId) {
         console.log('in removeRent', rentId);
-        $http({
-            method: 'DELETE',
-            url: '/delete/' + rentId
-        }).then(function (response) {
-            alert('Listing successfully deleted!')
-            console.log('rent deleted', response);
-            getRentListings();
-        }).catch(function (error) {
-            alert('Unable to delete!')
-            console.log('error in removeRent', error);
-        });
+        let cT = confirm('Confirming deletion?');
+        if (cT == true) {
+            $http({
+                method: 'DELETE',
+                url: '/delete/' + rentId
+            }).then(function (response) {
+                alert('Listing successfully deleted!')
+                console.log('rent deleted', response);
+                getRentListings();
+            }).catch(function (error) {
+                alert('Unable to delete!')
+                console.log('error in removeRent', error);
+            });
+        } else {
+            alert ('Deletion cancelled.')
+        }; //end of if-else
     }; //end of removeRent
 }); //end of controller

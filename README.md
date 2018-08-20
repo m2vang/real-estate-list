@@ -1,4 +1,4 @@
-# MEAN Stack To-Do List Application<br>
+# SEAN Stack Real-Estate Application<br>
 This application is gear towards real estate agents that will allow them to add a property either for sale or for rent. The user can input the cost, sqft, type (rent or sale), city and choose an image provided when adding a property. If a property is no longer avaliable, there is a delete option to remove the property. The user can also view just rentals or just homes for sale, depending on which option they choose.<br>
 
 ## Built With: <br>
