@@ -1,1 +1,23 @@
-<h1>Home</h1>
+<h1>Add new listing:</h1>
+
+<form ng-submit="hc.addHome(hc.homeToAdd)">
+    <input type="number" placeholder="Cost" ng-model="hc.homeToAdd.cost">
+    <br>
+    <input type="number" placeholder="Sqft" ng-model="hc.homeToAdd.sqft">
+    <br>
+    <input type="text" placeholder="City" ng-model="hc.homeToAdd.city">
+    <br>
+    <input type="text" placeholder="Sale or Rental?" ng-model="hc.homeToAdd.type">
+    <br>
+    <input type="text" placeholder="Image_path" ng-model="hc.homeToAdd.image_path">
+    <br>
+    <input type="submit" value="Add new Listing">
+</form>
+
+<h3 ng-repeat="home in hc.listings">
+    <p>{{home.cost}}</p>
+    <p>{{home.sqft}}</p>
+    <p>{{home.city}}</p>
+    <p>{{home.type}}</p>
+    <button>Delete</button>
+</h3>

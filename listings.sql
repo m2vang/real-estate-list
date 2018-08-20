@@ -1,12 +1,3 @@
--- Creating listings table in sql
-CREATE TABLE "listings" (
-	"id" serial primary key,
-	"cost" integer,
-	"sqft" integer,
-	"type" varchar(120) not null,
-	"city" varchar(120) not null,
-	"image_path" varchar(80) not null );
-
 -- Inserting data into table
 INSERT INTO "listings" ("cost", "sqft", "type", "city", "image_path")
 VALUES (123000, 1500, 'sale', 'Forest Lake', 'shiny.jpg'),

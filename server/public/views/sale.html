@@ -1,1 +1,12 @@
-<h1>Sale</h1>
+<h1></h1>
+    Homes for Sale:</h1>
+<div class="card" ng-repeat="sale in sc.sale">
+    <!-- <img class="card-img-top" ng-src="../images/{{home.image_path}}" alt="Card image cap"> -->
+    <div class="card-body">
+        <h5 class="card-cost">$ {{sale.cost}}</h5>
+        <p class="card-sqft">{{sale.sqft}}</p>
+        <p class="card-city">{{sale.city}}</p>
+        <p class="card-type">{{sale.type}}</p>
+        <!-- <a href="#" class="btn btn-danger">Delete</a> -->
+    </div>
+</div>
